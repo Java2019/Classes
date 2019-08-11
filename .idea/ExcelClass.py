@@ -1,6 +1,6 @@
 import xlrd, pprint
 
-class GetDataFromExcel(object):
+class GetDataFromExcel:
     def __init__(self, val = '~/Python/lec3/Excel/Взносы.xls'):
         self.val = val
 

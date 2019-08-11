@@ -11,7 +11,7 @@ def get_data():
     table = {}
 
     if not row_number == 0:
-        table = {str(sheet.row(i)[0]):str(sheet.row(i)[1])  for i in range(0,row_number)}
+        table = {sheet.row(i)[0]:sheet.row(i)[1] for i in range(0,row_number)}
         #for i in range(0, row_number):
         #    table.append(str(sheet.row(i)[0]))
     else:

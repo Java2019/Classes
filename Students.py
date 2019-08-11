@@ -16,4 +16,4 @@ class Student(Human):
 
 s = Student()
 h = Human()
-print(s._name)
+print(s.speak())

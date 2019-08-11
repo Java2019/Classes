@@ -1,4 +1,5 @@
 import xlrd
+import pprint
 
 def get_data():
 
@@ -7,16 +8,15 @@ def get_data():
 
     row_number = sheet.nrows
 
-    table = []
+    table = {}
 
     if not row_number == 0:
-        table = [str(sheet.row(i)[0]) for i in range(0,row_number)]
+        table = {str(sheet.row(i)[0]):str(sheet.row(i)[1])  for i in range(0,row_number)}
         #for i in range(0, row_number):
         #    table.append(str(sheet.row(i)[0]))
     else:
         print('Указанный файл не заполнен')
 
-    print(table)
-
+    pprint.pprint(table)
 
 get_data()
